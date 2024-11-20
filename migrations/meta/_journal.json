@@ -15,6 +15,27 @@
       "when": 1726710228726,
       "tag": "0001_chemical_moon_knight",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726799468939,
+      "tag": "0002_ancient_cannonball",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1730238246375,
+      "tag": "0003_bored_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1732066857856,
+      "tag": "0004_curious_vanisher",
+      "breakpoints": true
     }
   ]
 }
