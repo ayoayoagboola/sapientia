@@ -8,7 +8,7 @@ export interface TextAreaProps
     VariantProps<typeof textareaVariants> {}
 
 const textareaVariants = cva(
-  "flex h-10 w-full rounded-md border border-text-100 focus:border-text-900 bg-slate-50 px-3 py-2 text-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
+  "flex h-10 w-full rounded-md border border-slate-100 focus:border-slate-900 bg-slate-50 px-3 py-2 text-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {

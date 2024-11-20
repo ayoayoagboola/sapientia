@@ -1,14 +1,14 @@
 import * as React from "react";
-import { FC, forwardRef } from "react";
-import { cn } from "@/lib/utils";
+import { forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
+import { cn } from "@/lib/utils";
 
 interface CardProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof cardVariants> {}
 
 const cardVariants = cva(
-  "flex items-center justify-center border-black border rounded-lg p-6 bg-slate-50 gap-3",
+  "flex items-center justify-center border-black border rounded-lg p-6 bg-white gap-3",
   {
     variants: {
       variant: {
@@ -23,8 +23,14 @@ const cardVariants = cva(
 );
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ className, ...props }, ref) => {
-    return <div ref={ref} className={cn(className)} {...props} />;
+  ({ className, variant, ...props }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={cn(cardVariants({ variant, className }))}
+        {...props}
+      />
+    );
   }
 );
 

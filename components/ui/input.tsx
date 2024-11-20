@@ -8,7 +8,7 @@ export interface InputProps
     VariantProps<typeof inputVariants> {}
 
 const inputVariants = cva(
-  "flex h-10 w-full rounded-md border border-text-100 focus:border-text-900 bg-transparent px-3 py-2 text-sm transition-colors file:border-0 file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
+  "flex h-10 w-full rounded-md border border-slate-100 focus:border-slate-900 bg-transparent px-3 py-2 text-sm transition-colors file:border-0 file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {

@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "sapientia",
-  description: "certāmen ftw",
+  description:
+    "a comprehensive, free online resource for Latin learners and enthusiasts!",
 };
 
 export default function RootLayout({
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className="w-full h-full">{children}</body>
     </html>
   );
 }

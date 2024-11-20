@@ -20,13 +20,9 @@ export const users = pgTable("user", {
   lastName: text("lastName"),
   email: text("email").unique(),
   emailVerified: timestamp("emailVerified"),
-  bio: text("bio"),
   image: text("image"),
-  profileImage: text("profileImage"),
   password: text("password"),
   isTwoFactorEnabled: boolean("isTwoFactorEnabled").default(false),
-  gallery: text("gallery").array(),
-  selectedTheme: text("selectedTheme").default("default"),
 });
 
 export const accounts = pgTable(
@@ -88,6 +84,8 @@ export const twoFactorConfirmations = pgTable("twoFactorConfirmation", {
     .references((): AnyPgColumn => users.id, { onDelete: "cascade" })
     .notNull(),
 });
+
+// relations
 
 export const accountRelations = relations(accounts, ({ one }) => ({
   user: one(users, {

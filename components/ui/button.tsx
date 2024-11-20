@@ -15,9 +15,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-text-900 hover:bg-text-700 text-text-50",
-        solid: "bg-accent-400 hover:bg-[var(--accent-2)] text-text-50",
-        outline: "bg-transparent border border-text-400 hover:bg-text-400",
+        default: "bg-slate-900 hover:bg-slate-700 text-slate-50",
+        solid: "bg-accent-400 hover:bg-[var(--accent-2)] text-slate-50",
+        outline: "bg-transparent border border-slate-400 hover:bg-slate-400",
         light: "bg-transparent border border-bg-3 hover:bg-bg-3",
         sidebar:
           "bg-transparent hover:bg-bg-3 font-medium px-2 py-1.5 rounded-[5px]",

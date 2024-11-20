@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <h2><strong>sapientia, sapientiae</strong><br> wisdom </h2>
+  <br>
+</div>
 
-## Getting Started
+> This is still a work in progress!
 
-First, run the development server:
+# sapientia - a comprehensive, free online resource for Latin enthusiasts and learners.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## purpose 🧠
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+whether you're a beginner, an intermediate learner, or an advanced Latin enthusiast, sapientia offers an array of powerful tools and features to support your learning journey. explore interactive tools, a vast knowledge base, and structured learning methods, all aimed at making Latin more accessible and enjoyable!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## key features 🔑
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### conjugation & declension practice (in development)
 
-## Learn More
+- automatically generated charts for verb conjugations, noun declensions, and synopses.
+- interactive practice tools to help you master Latin's complex grammatical structures.
 
-To learn more about Next.js, take a look at the following resources:
+### (coming soon...)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### model sentences
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- generate contextually accurate example sentences tailored to different grammar topics.
+- build a deeper understanding of Latin syntax and sentence structure through real-world examples.
 
-## Deploy on Vercel
+### vocabulary practice
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- learn and practice Latin vocabulary with automated drills and exercises.
+- focus on high-frequency words or customize your vocabulary list to suit your learning pace.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### comprehensive latin guide
+
+- a detailed and accessible guide to Latin grammar, syntax, and usage.
+- explore clear explanations and examples to deepen your understanding of the language.
+
+### latin dictionary
+
+- extensive dictionary with translations, usage examples, and parsing.
+- explore the etymology of Latin words to understand their historical and linguistic roots.
+
+### knowledge base & library
+
+- dive into a rich library of classical texts, including works of literature, philosophy, and history.
+- learn about key figures from Roman mythology, history, and culture.
+
+### word graph & derivative map
+
+- visualize the relationships between Latin words and their derivatives in modern languages.
+- gain insight into how Latin continues to shape the vocabulary of modern tongues.
+
+### progress tracking
+
+- monitor your learning progress with built-in tools that track vocabulary acquisition, grammar mastery, and more.
+- set goals, review achievements, and stay motivated on your journey to fluency.
+
+
