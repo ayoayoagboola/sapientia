@@ -6,7 +6,7 @@ import { db } from "./db";
 import authConfig from "./auth.config";
 import { getTwoFactorConfirmationByUserId } from "./data/two-factor-confirmation";
 import { getAccountByUserId } from "./data/account";
-import { accounts, twoFactorConfirmations, users } from "./schema";
+import { twoFactorConfirmations, users } from "./schema";
 import { eq } from "drizzle-orm";
 
 export const {

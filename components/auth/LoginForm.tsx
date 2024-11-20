@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { useSearchParams } from "next/navigation";
 
-import { useState, useTransition } from "react";
+import { useTransition } from "react";
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import { Label } from "../ui/label";
@@ -25,9 +25,7 @@ export const LoginForm = () => {
       ? "Email is already in use!"
       : "";
 
-  const [showTwoFactor, setShowTwoFactor] = useState(false);
-  const [error, setError] = useState<string | undefined>("");
-  const [success, setSuccess] = useState<string | undefined>("");
+  // const [showTwoFactor, setShowTwoFactor] = useState(false);
   const [isPending, startTransition] = useTransition();
 
   const form = useForm<z.infer<typeof LoginSchema>>({
@@ -65,21 +63,10 @@ export const LoginForm = () => {
     });
   };
   return (
-    <Card className="flex-col w-72 h-[450px]">
+    <Card className="flex-col w-72">
       <Header title={"Login Form!"} label={"time to login!"} />
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 w-full">
         <div className="space-y-4">
-          {showTwoFactor && (
-            <div className="gap-y-2">
-              <Label>Code</Label>
-              <Input
-                placeholder="123456"
-                disabled={isPending}
-                {...register("code")}
-              />
-            </div>
-          )}
-          {!showTwoFactor && (
             <>
               <div className="gap-y-2">
                 <Label>Email</Label>
@@ -100,10 +87,9 @@ export const LoginForm = () => {
                 />
               </div>
             </>
-          )}
         </div>
         <Link href="/reset-password">Forgot password?</Link>
-        <Button type="submit" disabled={isPending}>
+        <Button className="w-full" type="submit" disabled={isPending}>
           Submit
         </Button>
       </form>
@@ -111,7 +97,7 @@ export const LoginForm = () => {
         <Social />
       </div>
       <Link href="/register">
-        <p className="text-sm">Don't have an account?</p>
+        <p className="text-sm">"Don't have an account?"</p>
       </Link>
     </Card>
   );

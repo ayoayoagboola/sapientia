@@ -50,7 +50,7 @@ export const SignupForm = () => {
     });
   };
   return (
-    <Card>
+    <Card className="flex-col w-72">
       <Header title={"Sign Up Form!"} label={"time to sign up!"} />
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 w-full">
         <div className="space-y-4">
@@ -91,7 +91,7 @@ export const SignupForm = () => {
             />
           </div>
         </div>
-        <Button type="submit" disabled={isPending}>
+        <Button className="w-full" type="submit" disabled={isPending}>
           <p>Submit</p>
         </Button>
       </form>
