@@ -1,7 +1,5 @@
 <div align="center">
-  <h2><strong>sapientia, sapientiae:</strong><br></h2>
-  <h3> wisdom </h3>
-  <br>
+  ![(temporary) sapientia logo](/public/assets/filled_logo.png)
 </div>
 
 > This is still a work in progress!
@@ -56,6 +54,3 @@ whether you're a beginner, an intermediate learner, or an advanced Latin enthusi
 - monitor your learning progress with built-in tools that track vocabulary acquisition, grammar mastery, and more.
 - set goals, review achievements, and stay motivated on your journey to fluency.
 
-
-# sapientia
-# sapientia
