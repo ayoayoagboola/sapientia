@@ -1,0 +1,2324 @@
+{
+    "ferō": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "fers": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "fert": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferimus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "fertis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferunt": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēbam": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēbās": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēbat": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēbāmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēbātis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēbant": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "feram": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        },
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēs": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "feret": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferēmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferētis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "ferent": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulī": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulistī": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulit": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulimus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulistis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulērunt": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulēre": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tuleram": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "pluperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerās": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "pluperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerat": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "pluperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerāmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "pluperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerant": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "pluperfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerō": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "future perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tuleris": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "future perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerit": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "future perfect",
+            "mood": "indicative",
+            "voice": "active"
+        },
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulerimus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "future perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tuleritis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "future perfect",
+            "mood": "indicative",
+            "voice": "active"
+        }
+    ],
+    "tulerint": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "future perfect",
+            "mood": "indicative",
+            "voice": "active"
+        },
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferat": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferāmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferātis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "active"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "ferant": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferrem": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferrēs": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferret": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferrēmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferrētis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "ferrent": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulerim": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulerīs": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulerīmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulerītis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulissem": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "pluperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulissēs": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "pluperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulisset": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "pluperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulissēmus": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "pluperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulissētis": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "pluperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "tulissent": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "pluperfect",
+            "mood": "subjunctive",
+            "voice": "active"
+        }
+    ],
+    "fer": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "imperative",
+            "voice": "active"
+        }
+    ],
+    "ferte": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "present",
+            "mood": "imperative",
+            "voice": "active"
+        }
+    ],
+    "feritō": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "future",
+            "mood": "imperative",
+            "voice": "active"
+        },
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "future",
+            "mood": "imperative",
+            "voice": "active"
+        }
+    ],
+    "feruntō": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "future",
+            "mood": "imperative",
+            "voice": "active"
+        }
+    ],
+    "ferre": [
+        {
+            "pos": "verb",
+            "tense": "present",
+            "mood": "infinitive",
+            "voice": "active"
+        }
+    ],
+    "tulisse": [
+        {
+            "pos": "verb",
+            "tense": "perfect",
+            "mood": "infinitive",
+            "voice": "active"
+        }
+    ],
+    "ferēns": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "ferentem": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "accusative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "ferentis": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "ferentī": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "dative"
+        }
+    ],
+    "ferente": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "ferentēs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "accusative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "ferentium": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "Ferentum": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "ferentibus": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "ferentia": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "lātūrus": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "nominative"
+        }
+    ],
+    "lātūrum": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "accusative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "lātūrī": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "lātūrō": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "lātūrōs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "accusative"
+        }
+    ],
+    "lātūrīs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "lātūra": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "lātūram": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "lātūrā": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "ablative"
+        }
+    ],
+    "lātūrās": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "future",
+            "mood": "participle",
+            "voice": "active",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "ferendum": [
+        {
+            "mood": "gerundive",
+            "case": "accusative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "accusative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "ferendī": [
+        {
+            "mood": "gerundive",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "ferendō": [
+        {
+            "mood": "gerundive",
+            "case": "dative"
+        },
+        {
+            "mood": "gerundive",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "lātum": [
+        {
+            "mood": "supine"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "accusative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "lātū": [
+        {
+            "mood": "supine"
+        }
+    ],
+    "feror": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēris": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "passive"
+        },
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēre": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "passive"
+        },
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        },
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "imperative",
+            "voice": "passive"
+        }
+    ],
+    "fertur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferimur": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "feruntur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "present",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēbar": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēbāris": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēbāre": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēbātur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēbāmur": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēbantur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferar": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        },
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "singular",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferētur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēmur": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferēminī": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "plural",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferentur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "future",
+            "mood": "indicative",
+            "voice": "passive"
+        }
+    ],
+    "ferāris": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferāre": [
+        {
+            "pos": "verb",
+            "person": "second",
+            "number": "singular",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferātur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferāmur": [
+        {
+            "pos": "verb",
+            "person": "first",
+            "number": "plural",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferantur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "present",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferrētur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "singular",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferrentur": [
+        {
+            "pos": "verb",
+            "person": "third",
+            "number": "plural",
+            "tense": "imperfect",
+            "mood": "subjunctive",
+            "voice": "passive"
+        }
+    ],
+    "ferrī": [
+        {
+            "pos": "verb",
+            "tense": "present",
+            "mood": "infinitive",
+            "voice": "passive"
+        }
+    ],
+    "lātus": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "nominative"
+        }
+    ],
+    "lāte": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "vocative"
+        }
+    ],
+    "lātī": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "lātō": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "lātōs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "accusative"
+        }
+    ],
+    "lātōrum": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "genitive"
+        }
+    ],
+    "lātīs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "lāta": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "lātam": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "lātae": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "vocative"
+        }
+    ],
+    "lātā": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "ablative"
+        }
+    ],
+    "lātās": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "lātārum": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "perfect",
+            "mood": "participle",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "genitive"
+        }
+    ],
+    "ferendus": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "nominative"
+        }
+    ],
+    "ferendōs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "accusative"
+        }
+    ],
+    "ferendīs": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "masculine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "ablative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "ablative"
+        }
+    ],
+    "ferenda": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "vocative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "neuter",
+            "case": "accusative"
+        }
+    ],
+    "ferendam": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "ferendae": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "genitive"
+        },
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "dative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "nominative"
+        },
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "vocative"
+        }
+    ],
+    "ferendā": [
+        {
+            "pos": "verb",
+            "number": "singular",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "ablative"
+        }
+    ],
+    "ferendās": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "accusative"
+        }
+    ],
+    "ferendārum": [
+        {
+            "pos": "verb",
+            "number": "plural",
+            "tense": "present",
+            "mood": "gerundive",
+            "voice": "passive",
+            "gender": "feminine",
+            "case": "genitive"
+        }
+    ]
+}
