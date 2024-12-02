@@ -1,6 +1,4 @@
-<div align="center">
-  ![(temporary) sapientia logo](/public/assets/filled_logo.png)
-</div>
+![(temporary) sapientia logo](/public/assets/filled_logo.png)
 
 > This is still a work in progress!
 
