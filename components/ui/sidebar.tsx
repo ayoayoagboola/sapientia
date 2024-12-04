@@ -601,7 +601,7 @@ const SidebarMenuLink = React.forwardRef<
   React.ComponentProps<"button"> & {
     href?: string;
   }
->(({ href = "/", ...props }) => {
+>(({ href = "/", ...props }, ref) => {
   const path = usePathname();
 
   const active = path.includes(href);

@@ -72,6 +72,7 @@ const MainSidebar = () => {
                 src={open ? "/assets/logo.png" : "/assets/icon.png"}
                 width={256}
                 height={50}
+                priority
                 alt="Logo"
               ></Image>
             </div>
