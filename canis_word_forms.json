@@ -1,0 +1,74 @@
+{
+    "canis": [
+        {
+            "pos": "noun",
+            "number": "singular",
+            "gender": "masculine",
+            "case": "nominative"
+        },
+        {
+            "pos": "noun",
+            "number": "singular",
+            "gender": "masculine",
+            "case": "genitive"
+        }
+    ],
+    "canem": [
+        {
+            "pos": "noun",
+            "number": "singular",
+            "gender": "masculine",
+            "case": "accusative"
+        }
+    ],
+    "cānī": [
+        {
+            "pos": "noun",
+            "number": "singular",
+            "case": "dative"
+        }
+    ],
+    "cānē": [
+        {
+            "pos": "noun",
+            "number": "singular",
+            "case": "ablative"
+        }
+    ],
+    "cānēs": [
+        {
+            "pos": "noun",
+            "number": "plural",
+            "case": "nominative"
+        },
+        {
+            "pos": "noun",
+            "number": "plural",
+            "case": "vocative"
+        },
+        {
+            "pos": "noun",
+            "number": "plural",
+            "case": "accusative"
+        }
+    ],
+    "cānum": [
+        {
+            "pos": "noun",
+            "number": "plural",
+            "case": "genitive"
+        }
+    ],
+    "Canibus": [
+        {
+            "pos": "noun",
+            "number": "plural",
+            "case": "dative"
+        },
+        {
+            "pos": "noun",
+            "number": "plural",
+            "case": "ablative"
+        }
+    ]
+}

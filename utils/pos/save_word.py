@@ -9,7 +9,7 @@ def save_to_json(forms, lemma):
     with open(f"{lemma}_word_forms.json", "w") as f:
         json.dump(forms, f, ensure_ascii=False, indent=4)
 
-lemma = "fero"
+lemma = "canis"
 
 res = decline(lemma)
 
