@@ -1,26 +1,62 @@
 import { trpc } from "@/app/_trpc/client";
 import { Input } from "@/components/ui/input";
 import { TableCell } from "@/components/ui/table";
+import { Controller, useFormContext } from "react-hook-form";
 
 interface ChartCellProps {
   lemma: string;
   requested_form: WordForm;
+  name: string;
+  validation: string;
+  isCorrect: boolean;
+  showAnswer: boolean;
 }
 
-// TODO: figure out how to verify answers
-
-const ChartCell = ({ lemma, requested_form }: ChartCellProps) => {
+const ChartCell = ({
+  lemma,
+  requested_form,
+  name,
+  validation,
+  isCorrect,
+  showAnswer,
+}: ChartCellProps) => {
   const word = trpc.words.getWordForm.useQuery({
     lemma: lemma,
     form: requested_form,
   });
 
+  const { control, setValue } = useFormContext();
+
+  const correctAnswer = word.data?.form || "none";
+
+  if (correctAnswer) {
+    setValue(validation, correctAnswer, { shouldValidate: false });
+  }
+  // Store the correct answer in the parent form using a parallel structure
+
   return (
-    <TableCell className="p-0">
-      <Input
-        className="w-full h-full border-0 rounded-none bg-transparent focus-visible:outline-none"
-        placeholder={word.data?.form || "none"}
-        type="text"
+    <TableCell
+      className={`p-0 ${
+        showAnswer
+          ? isCorrect
+            ? "bg-green-100 border-green-300" // Correct answer background
+            : "bg-red-100 border-red-300" // Incorrect answer background
+          : ""
+      }`}
+    >
+      <Controller
+        name={name}
+        control={control}
+        render={({ field }) => (
+          <Input
+            {...field}
+            className="w-full h-full border-0 rounded-none bg-transparent autofill:bg-transparent focus-visible:outline-none"
+            placeholder={showAnswer ? correctAnswer : "Enter form"}
+            type="text"
+            value={showAnswer ? correctAnswer : field.value || ""}
+            readOnly={showAnswer}
+          />
+        )}
       />
     </TableCell>
   );
