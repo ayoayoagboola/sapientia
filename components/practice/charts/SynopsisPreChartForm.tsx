@@ -26,7 +26,10 @@ interface SynopsisPreChartFormProps {
   methods: any;
 }
 
-const SynopsisPreChartForm = ({ onSubmit, setMood }: SynopsisPreChartFormProps) => {
+const SynopsisPreChartForm = ({
+  onSubmit,
+  setMood,
+}: SynopsisPreChartFormProps) => {
   const methods = useForm<SynopsisPreChartFormValues>({
     resolver: zodResolver(SynopsisPreChartFormSchema),
     defaultValues: {
@@ -132,9 +135,9 @@ const SynopsisPreChartForm = ({ onSubmit, setMood }: SynopsisPreChartFormProps) 
                   <SelectContent>
                     <SelectItem value="indicative">Indicative</SelectItem>
                     <SelectItem value="subjunctive">Subjunctive</SelectItem>
-                    <SelectItem value="participles">Participles</SelectItem>
-                    <SelectItem value="infinitives">Infinitives</SelectItem>
-                    <SelectItem value="imperatives">Imperatives</SelectItem>
+                    <SelectItem value="participle">Participles</SelectItem>
+                    <SelectItem value="infinitive">Infinitives</SelectItem>
+                    <SelectItem value="imperative">Imperatives</SelectItem>
                   </SelectContent>
                 </Select>
               )}
