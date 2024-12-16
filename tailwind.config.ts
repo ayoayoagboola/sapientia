@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      rotate: {
+        "y-180": "180deg",
+      },
       colors: {
         slate: {
           "50": "#fcfeff",
@@ -24,6 +27,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

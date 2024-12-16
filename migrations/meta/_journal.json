@@ -64,6 +64,48 @@
       "when": 1732759946891,
       "tag": "0008_volatile_ben_parker",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1733678393258,
+      "tag": "0009_foamy_madripoor",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1733893281535,
+      "tag": "0010_gorgeous_slyde",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1733893447887,
+      "tag": "0011_sharp_arachne",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1733893478496,
+      "tag": "0012_majestic_colonel_america",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1733893755584,
+      "tag": "0013_cooing_santa_claus",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1734172742152,
+      "tag": "0014_flippant_sugar_man",
+      "breakpoints": true
     }
   ]
 }

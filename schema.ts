@@ -5,7 +5,7 @@ import {
   text,
   primaryKey,
   serial,
-  integer, 
+  integer,
   uuid,
   AnyPgColumn,
 } from "drizzle-orm/pg-core";
@@ -88,10 +88,12 @@ export const twoFactorConfirmations = pgTable("twoFactorConfirmation", {
 
 // the good stuff
 
+// words
+
 export const words = pgTable("word", {
   id: serial("id").primaryKey(),
   dateAdded: timestamp("dateAdded").defaultNow().notNull(),
-  word: text("lemma").notNull(), 
+  word: text("lemma").notNull(),
   declension: text("declension"),
   conjugation: text("conjugation"),
 });
@@ -102,18 +104,45 @@ export const wordForms = pgTable("wordForm", {
     .references((): AnyPgColumn => words.id, { onDelete: "cascade" })
     .notNull(),
   dateAdded: timestamp("dateAdded").defaultNow().notNull(),
-  lemma: text("lemma").notNull(), 
-  form: text("form").notNull(), 
-  pos: text("pos"), 
-  person: text("person"), 
-  number: text("number"), 
-  tense: text("tense"), 
+  lemma: text("lemma").notNull(),
+  form: text("form").notNull(),
+  pos: text("pos"),
+  person: text("person"),
+  number: text("number"),
+  tense: text("tense"),
   mood: text("mood"),
   voice: text("voice"),
   gender: text("gender"),
   case: text("case"),
   degree: text("degree"),
 });
+
+// flashcards
+
+export const flashcards = pgTable("flashcard", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  dateAdded: timestamp("dateAdded").defaultNow().notNull(),
+  userId: uuid("userId")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  setId: uuid("setId")
+    .notNull()
+    .references(() => flashcardSets.id, { onDelete: "cascade" }),
+  term: text("term").notNull(),
+  definitions: text("definitions").array().notNull(), // words can have multiple definitions. users can define which ones they wish to include in the set
+});
+
+export const flashcardSets = pgTable("flashcardSet", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  dateAdded: timestamp("dateAdded").defaultNow().notNull(),
+  userId: uuid("userId")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }), // Foreign key to the users table
+  title: text("title").notNull(), // Title for the flashcard set
+  description: text("description"), // Optional description
+});
+
+// charts (soon)
 
 // relations
 
@@ -134,7 +163,30 @@ export const sessionRelations = relations(sessions, ({ one }) => ({
 export const userRelations = relations(users, ({ many }) => ({
   accounts: many(accounts),
   sessions: many(sessions),
+  flashcardSets: many(flashcardSets),
 }));
+
+export const flashcardRelations = relations(flashcards, ({ one }) => ({
+  user: one(users, {
+    fields: [flashcards.userId],
+    references: [users.id],
+  }),
+  flashcardSet: one(flashcardSets, {
+    fields: [flashcards.setId],
+    references: [flashcardSets.id],
+  }), // A flashcard belongs to one flashcard set
+}));
+
+export const flashcardSetRelations = relations(
+  flashcardSets,
+  ({ one, many }) => ({
+    user: one(users, {
+      fields: [flashcardSets.userId],
+      references: [users.id],
+    }),
+    cards: many(flashcards),
+  })
+);
 
 export const twoFactorConfirmationRelations = relations(
   twoFactorConfirmations,
