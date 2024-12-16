@@ -15,8 +15,9 @@ import React, { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { z } from "zod";
 import SynopsisPreChartForm from "@/components/practice/charts/SynopsisPreChartForm";
+import { toast } from "sonner";
 
-// TODO: impelement dynamic sessions 
+// TODO: impelement dynamic sessions
 
 type SynopsisChartFormValues = z.infer<typeof SynopsisChartSchema>;
 
@@ -64,6 +65,7 @@ const SynopsisPage = () => {
   };
 
   const onSubmit = (data: z.infer<typeof SynopsisChartSchema>) => {
+    toast.success("Chart submmitted!");
     console.log("Validated Data:", data);
 
     const results = data.charts.map((chart) => ({
