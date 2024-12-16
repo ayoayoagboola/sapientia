@@ -600,6 +600,7 @@ const SidebarMenuLink = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button"> & {
     href?: string;
+
   }
 >(({ href = "/", ...props }, ref) => {
   const path = usePathname();
