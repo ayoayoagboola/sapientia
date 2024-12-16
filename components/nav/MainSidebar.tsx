@@ -65,18 +65,24 @@ const MainSidebar = () => {
     <Sidebar collapsible="icon">
       <SidebarContent className="justify-between">
         <SidebarGroup className="gap-y-3">
-          <Link href="/">
-            <div className="w-full pr-20">
-              <Image
-                className="w-full"
-                src={open ? "/assets/logo.png" : "/assets/icon.png"}
-                width={256}
-                height={50}
-                priority
-                alt="Logo"
-              ></Image>
-            </div>
-          </Link>
+          <SidebarMenuButton
+            className="group-data-[collapsible=icon]:!p-0 !p-0 h-13 hover:bg-transparent"
+            asChild
+            isActive={false}
+          >
+            <a href={"/"}>
+              <div className={`w-full ${open ? "pr-20" : ""}`}>
+                <Image
+                  className="w-full h-full"
+                  src={open ? "/assets/logo.png" : "/assets/icon.png"}
+                  width={open ? 256 : 32}
+                  height={open ? 50 : 32}
+                  priority
+                  alt="Logo"
+                />
+              </div>
+            </a>
+          </SidebarMenuButton>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

@@ -3,6 +3,8 @@ import { Input } from "@/components/ui/input";
 import { TableCell } from "@/components/ui/table";
 import { Controller, useFormContext } from "react-hook-form";
 
+// TODO: figure out autocomplete bg
+
 interface ChartCellProps {
   lemma: string;
   requested_form: WordForm;
@@ -39,8 +41,8 @@ const ChartCell = ({
       className={`p-0 ${
         showAnswer
           ? isCorrect
-            ? "bg-green-100 border-green-300" // Correct answer background
-            : "bg-red-100 border-red-300" // Incorrect answer background
+            ? "bg-green-50 hover:bg-green-100 border-green-300" // Correct answer background
+            : "bg-red-50 hover:bg-red-100 border-red-300" // Incorrect answer background
           : ""
       }`}
     >

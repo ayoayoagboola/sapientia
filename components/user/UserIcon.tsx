@@ -1,6 +1,8 @@
 import { auth } from "@/auth";
 import Image from "next/image";
 
+// TODO: add dropdown 
+
 export default async function UserAvatar() {
   const session = await auth();
 
@@ -11,8 +13,8 @@ export default async function UserAvatar() {
       <Image
         className="rounded-full"
         src={session.user.image as string}
-        width={30}
-        height={30}
+        width={32}
+        height={32}
         alt="User Avatar"
       />
     </div>
