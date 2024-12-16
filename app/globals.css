@@ -2,21 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, :root {
-    height: 100%; 
-    width: 100%; 
+html,
+body,
+:root {
+  height: 100%;
+  width: 100%;
 }
 
 /* headings */
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* TODO: fix styles */
+
+.flashcard-list-wrapper {
+  position: relative;
+  width: 500px;
+  height: 340px;
+  perspective: 1000px; /* Adds 3D depth */
+  overflow: hidden;
+}
+
+.flashcard-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth opacity and transform */
+  pointer-events: none; /* Disable interaction for hidden cards */
+}
+
+.flashcard-wrapper.current {
+  transform: translateX(0) rotateY(0deg); /* Center card */
+  opacity: 1;
+  pointer-events: auto; /* Enable interaction */
+  z-index: 1;
+}
+
+.flashcard-wrapper.previous {
+  transform: translateX(-60%) rotateY(-15deg); /* Left, rotated slightly */
+  opacity: 0;
+  z-index: 0;
+}
+
+.flashcard-wrapper.next {
+  transform: translateX(60%) rotateY(15deg); /* Right, rotated slightly */
+  opacity: 0;
+  z-index: 0;
+}
+
+.flashcard-wrapper.hidden {
+  display: none; /* Fully hidden */
+}
+
+/* Flashcard Content */
+.flashcard-content {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+}
+
+.flashcard-content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.flashcard-content-wrapper.flipped {
+  transform: rotateX(180deg); /* Flip the card */
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden; /* Hide the back when flipped */
+}
+
+.flashcard-back {
+  transform: rotateX(180deg); /* Ensure the back side is flipped */
 }
