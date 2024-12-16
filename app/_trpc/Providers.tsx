@@ -12,16 +12,18 @@ export default function Providers({ children }: { children: React.ReactNode}) {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: 'http://localhost:3000/api/trpc',
+          url: 'http://localhost:3000/api/trpc', // Make sure this is correct
         }),
       ],
     }),
   );
+
   return (
-    <trpc.Provider client={trpcClient} queryClient={queryClient}>
-      <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={queryClient}> 
+      <trpc.Provider client={trpcClient} queryClient={queryClient}>
         {children}
-      </QueryClientProvider>
-    </trpc.Provider>
+      </trpc.Provider>
+    </QueryClientProvider>
   );
 }
+

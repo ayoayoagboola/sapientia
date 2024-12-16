@@ -135,3 +135,21 @@ export const DeclinationChartSchema = z.object({
     })
   ),
 });
+
+// flashcards
+
+export const CreateFlashCardSetSchema = z.object({
+  title: z.string().min(1, "A title is required!"),
+  description: z.optional(z.string()),
+  cards: z.array(
+    z.object({
+      term: z.string().min(1, "A term is required!"),
+      definitions: z.string().min(1, "adfadsf"),
+    })
+  ),
+});
+
+export const CreateFlashCardSchema = z.object({
+  term: z.string().min(1, "A term is required!"),
+  definitions: z.string().min(1, "asdfadsfasdf"),
+});

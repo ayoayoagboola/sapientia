@@ -1,5 +1,5 @@
 import { db } from "@/db";
-import { users, wordForms, words } from "@/schema";
+import { flashcardSets, users, wordForms, words } from "@/schema";
 import { eq } from "drizzle-orm";
 
 // words
@@ -44,6 +44,22 @@ export const getUserById = async (id: string) => {
     if (user) {
       return user;
     }
+  } catch (error) {
+    return { error: "Unauthorized" };
+  }
+};
+
+// flashcards
+
+export const getFlashCardSets = async (userId: string) => {
+  try {
+    const sets = await db.query.flashcardSets.findMany({
+      with: {
+        cards: true,
+      },
+      where: eq(flashcardSets.userId, userId),
+    });
+    return sets;
   } catch (error) {
     return { error: "Unauthorized" };
   }
