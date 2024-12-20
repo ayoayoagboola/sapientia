@@ -15,8 +15,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
+import { trpc } from "@/app/_trpc/client";
+import SearchInput from "@/components/SearchInput";
 
-// Form schema
+// TODO: fix SearchInput 
 
 type SynopsisPreChartFormValues = z.infer<typeof SynopsisPreChartFormSchema>;
 
@@ -48,6 +50,15 @@ const SynopsisPreChartForm = ({
     setMood(mood);
   }, [mood, setMood]);
 
+  // const fetchLemmas = async (searchTerm: string) => {
+  //   console.log("Fetching lemmas for:", searchTerm);
+  //   const { data } = await trpc.words.searchWords.useQuery({
+  //     query: searchTerm,
+  //   });
+  //   console.log(data);
+  //   return data;
+  // };
+
   return (
     <FormProvider {...methods}>
       <Card className="rounded-3xl w-80">
@@ -58,6 +69,21 @@ const SynopsisPreChartForm = ({
           })}
           className="flex flex-col w-full h-full gap-4 p-4"
         >
+          <div className="flex flex-col gap-2">
+            <label className="font-bold">Lemma</label>
+            <Controller
+              name={"lemma"}
+              control={control}
+              render={({ field }) => (
+                <SearchInput
+                  queryKey="searchLemmas"
+                  pos="verb"
+                  onSelect={field.onChange}
+                  placeholder="Search for lemmas"
+                />
+              )}
+            />
+          </div>
           <div className="flex flex-col gap-2">
             <label className="font-bold">Person</label>
             <Controller
@@ -82,10 +108,6 @@ const SynopsisPreChartForm = ({
           </div>
           <div className="flex flex-col gap-2">
             <label className="font-bold">Number</label>
-            {/* <select {...register("number")} className="border p-2 rounded">
-              <option value="singular">Singular</option>
-              <option value="plural">Plural</option>
-            </select> */}
             <Controller
               name={"number"}
               control={control}
@@ -106,21 +128,7 @@ const SynopsisPreChartForm = ({
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className="font-bold">Lemma</label>
-            <Input
-              type="text"
-              {...register("lemma")}
-              className="border p-2 rounded"
-              placeholder="Enter lemma (e.g., fero)"
-            />
-          </div>
-          <div className="flex flex-col gap-2">
             <label className="font-bold">Mood</label>
-            {/* <select {...register("mood")} className="border p-2 rounded">
-              <option value="indicative">Indicative</option>
-              <option value="subjunctive">Subjunctive</option>
-              <option value="imperative">Imperative</option>
-            </select> */}
             <Controller
               name={"mood"}
               control={control}
