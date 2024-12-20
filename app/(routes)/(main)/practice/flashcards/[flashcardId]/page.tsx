@@ -4,6 +4,8 @@ import { trpc } from "@/app/_trpc/client";
 import FlashCard from "@/components/practice/flashcards/FlashCard";
 import React, { use } from "react";
 
+// TODO: fix styling 
+
 interface FlashCardPageProps {
   params: Promise<{ flashcardId: string }>;
 }
@@ -42,7 +44,7 @@ const FlashCardPage = ({ params }: FlashCardPageProps) => {
   return (
     <div className="flex flex-col w-full h-full items-center justify-center gap-4">
       <div className="flex flex-col h-full gap-4 items-center justify-start p-16">
-        <h3>{set.title}</h3>
+        <h3 className="font-medium">{set.title}</h3>
         {set && <FlashCard set={set as FlashCardSet} />}
         <div className="flex flex-col w-full gap-4 items-center justify-center">
           <h4 className="w-full text-start font-medium">

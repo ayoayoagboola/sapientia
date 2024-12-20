@@ -1,7 +1,7 @@
 // TODO: add search bar
 
 import { SidebarTrigger } from "../ui/sidebar";
-import UserIcon from "../user/UserIcon";
+import UserIcon from "../user/CurrentUserAvatar";
 import CreateDropdown from "./CreateDropdown";
 import Searchbar from "./Searchbar";
 

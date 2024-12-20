@@ -16,6 +16,7 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
+  SidebarMenuBadge,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarMenuLink,
@@ -31,31 +32,37 @@ const items = [
     title: "Dashboard",
     url: "/dashboard",
     icon: LayoutDashboard,
+    active: true,
   },
   {
     title: "Practice",
     url: "/practice",
     icon: Puzzle,
+    active: true,
   },
   {
     title: "Dictionary",
     url: "/dictionary",
     icon: BookOpen,
+    active: false,
   },
   {
     title: "Library",
     url: "/library",
     icon: ScrollText,
+    active: false,
   },
   {
     title: "Learn",
     url: "/learn",
     icon: Brain,
+    active: false,
   },
   {
     title: "Stats",
     url: "/stats",
     icon: Award,
+    active: false,
   },
 ];
 
@@ -90,6 +97,11 @@ const MainSidebar = () => {
                   <SidebarMenuLink href={item.url}>
                     <item.icon />
                     <span>{item.title}</span>
+                    {item.active == false && (
+                      <SidebarMenuBadge className="bg-slate-200/80 text-slate-500">
+                        Coming soon...
+                      </SidebarMenuBadge>
+                    )}
                   </SidebarMenuLink>
                 </SidebarMenuItem>
               ))}

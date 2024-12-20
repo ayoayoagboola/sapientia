@@ -27,8 +27,8 @@ h3 {
 
 .flashcard-list-wrapper {
   position: relative;
-  width: 500px;
-  height: 340px;
+  width: 660px;
+  height: 448px;
   perspective: 1000px; /* Adds 3D depth */
   overflow: hidden;
 }
