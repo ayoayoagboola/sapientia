@@ -3,6 +3,8 @@ import { auth } from "@/auth";
 import Image from "next/image";
 import { UserIcon as Icon } from "lucide-react";
 
+// TODO: add actions 
+
 interface UserIconProps {
   userId?: string;
   withName?: boolean;
