@@ -1,0 +1,1 @@
+ALTER TABLE "word" ADD COLUMN "pos" text;

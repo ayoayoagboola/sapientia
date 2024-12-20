@@ -1,0 +1,1 @@
+ALTER TABLE "flashcard" ADD COLUMN "starred" boolean NOT NULL;
