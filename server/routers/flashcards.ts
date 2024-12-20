@@ -1,7 +1,7 @@
-import { z } from "zod";
+import { set, z } from "zod";
 
 import { protectedProcedure, router } from "@/server/trpc";
-import { CreateFlashCardSetSchema } from "@/schemas";
+import { CreateFlashCardSetSchema, EditFlashCardSetSchema } from "@/schemas";
 import { db } from "@/db";
 import { getFlashCardSets } from "@/db/queries";
 import { and, eq, sql } from "drizzle-orm";
@@ -13,7 +13,7 @@ import {
 } from "@/schema";
 import { auth } from "@/auth";
 
-// TODO: add edit procedure
+// TODO: fix edit procedure: allow new cards when editing 
 
 export const flashCardRouter = router({
   getFlashCardSets: protectedProcedure.query(async ({ ctx }) => {
@@ -86,11 +86,60 @@ export const flashCardRouter = router({
             setId: flashCardSet.setId,
             term: card.term,
             definitions: card.definitions.split(", "),
+            starred: false,
           });
         }
 
         // Return the created setId
         return flashCardSet.setId;
+      } catch (error) {
+        return { error: "Could not create flashcard set" };
+      }
+    }),
+
+  editFlashCardSet: protectedProcedure
+    .input(
+      z.object({
+        set: EditFlashCardSetSchema,
+      })
+    )
+    .mutation(async ({ input }) => {
+      try {
+        await db
+          .update(flashcardSets)
+          .set({
+            title: input.set.title,
+            description: input.set.description,
+          }).where(eq(flashcardSets.id, input.set.id))
+
+        for (const card of input.set.cards) {
+          await db.update(flashcards).set({
+            term: card.term,
+            definitions: card.definitions,
+          }).where(eq(flashcards.id, card.id));
+        }
+      } catch (error) {
+        return { error: "Could not create flashcard set" };
+      }
+    }),
+
+  editFlashCard: protectedProcedure
+    .input(
+      z.object({
+        id: z.string(),
+        term: z.string(),
+        definitions: z.string(),
+      })
+    )
+    .mutation(async ({ input }) => {
+      try {
+        await db
+          .update(flashcards)
+          .set({
+            term: input.term,
+            definitions: input.definitions.split(", "),
+          })
+          .where(eq(flashcards.id, input.id));
       } catch (error) {
         return { error: "Could not create flashcard set" };
       }

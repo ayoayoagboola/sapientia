@@ -1,16 +1,14 @@
-import { Button } from "@/components/ui/button";
+"use client";
+
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import UserIcon from "@/components/user/UserIcon";
+import { cn } from "@/lib/utils";
+import { ArrowLeft, ArrowRight, PencilLine } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
-// TODO: edit some styles 
+// TODO: edit some styles
 
 interface FlashCardProps {
   set: FlashCardSet;
@@ -68,14 +66,14 @@ const FlashCard = ({ set }: FlashCardProps) => {
                 onClick={() => toggleFlip(index)}
               >
                 {/* Front of the card */}
-                <div className="flashcard-front w-[500px] h-[340px]">
-                  <Card className="flex w-[500px] h-[340px] items-center justify-center rounded-[20px]">
+                <div className="flashcard-front w-[660x] h-[448px]">
+                  <Card className="flex w-[660px] h-[448px] items-center justify-center font-medium text-xl rounded-[20px]">
                     {card.term}
                   </Card>
                 </div>
                 {/* Back of the card */}
-                <div className="flashcard-back w-[500px] h-[340px]">
-                  <Card className="flex w-[500px] h-[340px] items-center justify-center rounded-[20px]">
+                <div className="flashcard-back w-[660px] h-[448px]">
+                  <Card className="flex w-[660px] h-[448px] items-center justify-center font-medium text-xl rounded-[20px]">
                     {card.definitions}
                   </Card>
                 </div>
@@ -85,14 +83,36 @@ const FlashCard = ({ set }: FlashCardProps) => {
           );
         })}
       </div>
-      <div className="flex items-center justify-center gap-4 mt-4">
-        <Button className="w-8 h-8" variant={"soft_outline"} onClick={goToPrevious}>
-          <ArrowLeft />
-        </Button>
-        <p>{currentIndex + 1 + "/" + set.cards.length}</p>
-        <Button className="w-8 h-8" variant={"soft_outline"} onClick={goToNext}>
-          <ArrowRight />
-        </Button>
+      <div className="flex w-full items-center justify-between my-4">
+        <div className="flex flex-col gap-1 items-start justify-center text-sm font-medium">
+          Created by:
+          <UserIcon userId={set.userId} withName />
+        </div>
+        <div className="flex items-center justify-center gap-4">
+          <Button
+            className="w-8 h-8"
+            variant={"soft_outline"}
+            onClick={goToPrevious}
+          >
+            <ArrowLeft />
+          </Button>
+          <p>{currentIndex + 1 + "/" + set.cards.length}</p>
+          <Button
+            className="w-8 h-8"
+            variant={"soft_outline"}
+            onClick={goToNext}
+          >
+            <ArrowRight />
+          </Button>
+        </div>
+        <div>
+          <Link
+            className={cn("w-8 h-8", buttonVariants({ variant: "ghost" }))}
+            href={`/practice/flashcards/edit/${set.id}`}
+          >
+            <PencilLine />
+          </Link>
+        </div>
       </div>
     </div>
   );

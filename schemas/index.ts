@@ -153,3 +153,32 @@ export const CreateFlashCardSchema = z.object({
   term: z.string().min(1, "A term is required!"),
   definitions: z.string().min(1, "asdfadsfasdf"),
 });
+
+export const EditFlashCardSetSchema = z.object({
+  id: z.string(),
+  dateAdded: z.string(),
+  userId: z.string(),
+  title: z.string().min(1, "A title is required!"),
+  description: z.string().nullable(),
+  cards: z.array(
+    z.object({
+      id: z.string().min(1, "Id is required"),
+      dateAdded: z.string(),
+      starred: z.boolean(),
+      userId: z.string(),
+      setId: z.string(),
+      term: z.string().min(1, "A term is required!"),
+      definitions: z.array(z.string()),
+    })
+  ),
+});
+
+export const EditFlashCardSchema = z.object({
+  id: z.string().min(1, "Id is required"),
+  dateAdded: z.string(),
+  starred: z.boolean(),
+  userId: z.string(),
+  setId: z.string(),
+  term: z.string().min(1, "A term is required!"),
+  definitions: z.array(z.string()),
+});
