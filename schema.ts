@@ -94,6 +94,7 @@ export const words = pgTable("word", {
   id: serial("id").primaryKey(),
   dateAdded: timestamp("dateAdded").defaultNow().notNull(),
   word: text("lemma").notNull(),
+  pos: text("pos"),
   declension: text("declension"),
   conjugation: text("conjugation"),
 });
@@ -122,9 +123,8 @@ export const wordForms = pgTable("wordForm", {
 export const flashcards = pgTable("flashcard", {
   id: uuid("id").defaultRandom().primaryKey(),
   dateAdded: timestamp("dateAdded").defaultNow().notNull(),
-  userId: uuid("userId")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }),
+  starred: boolean("starred").notNull(),
+  userId: uuid("userId").references(() => users.id, { onDelete: "cascade" }),
   setId: uuid("setId")
     .notNull()
     .references(() => flashcardSets.id, { onDelete: "cascade" }),
@@ -135,9 +135,8 @@ export const flashcards = pgTable("flashcard", {
 export const flashcardSets = pgTable("flashcardSet", {
   id: uuid("id").defaultRandom().primaryKey(),
   dateAdded: timestamp("dateAdded").defaultNow().notNull(),
-  userId: uuid("userId")
-    .notNull()
-    .references(() => users.id, { onDelete: "cascade" }), // Foreign key to the users table
+  userId: uuid("userId").references(() => users.id, { onDelete: "cascade" }), // Foreign key to the users table
+  isCustom: boolean("isCustom").notNull(),
   title: text("title").notNull(), // Title for the flashcard set
   description: text("description"), // Optional description
 });

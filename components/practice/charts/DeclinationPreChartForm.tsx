@@ -15,8 +15,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
+import SearchInput from "@/components/SearchInput";
 
 // Form schema
+
+// TODO: should adjectives, pronouns, and nouns be here? 
 
 type DeclinationPreChartFormValues = z.infer<
   typeof DeclinationPreChartFormSchema
@@ -24,7 +27,6 @@ type DeclinationPreChartFormValues = z.infer<
 
 interface DeclinationPreChartFormProps {
   onSubmit: (params: DeclinationPreChartFormValues) => void;
-  methods: any;
 }
 
 const DeclinationPreChartForm = ({
@@ -37,8 +39,7 @@ const DeclinationPreChartForm = ({
     },
   });
 
-  const { handleSubmit, register } = methods;
-  console.log(methods.getValues());
+  const { handleSubmit, control } = methods;
 
   return (
     <FormProvider {...methods}>
@@ -52,11 +53,17 @@ const DeclinationPreChartForm = ({
         >
           <div className="flex flex-col gap-2">
             <label className="font-bold">Lemma</label>
-            <Input
-              type="text"
-              {...register("lemma")}
-              className="border p-2 rounded"
-              placeholder="Enter lemma (e.g., fero)"
+            <Controller
+              name={"lemma"}
+              control={control}
+              render={({ field }) => (
+                <SearchInput
+                  queryKey="searchLemmas"
+                  pos="noun"
+                  onSelect={field.onChange}
+                  placeholder="Search for lemmas"
+                />
+              )}
             />
           </div>
           <Button type="submit">Generate Chart</Button>
