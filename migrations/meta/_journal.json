@@ -127,6 +127,20 @@
       "when": 1734658068380,
       "tag": "0017_nosy_silver_fox",
       "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1735064477587,
+      "tag": "0018_messy_shiver_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1736640280744,
+      "tag": "0019_wet_longshot",
+      "breakpoints": true
     }
   ]
 }

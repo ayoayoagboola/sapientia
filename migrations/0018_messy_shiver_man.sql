@@ -1,0 +1,1 @@
+ALTER TABLE "flashcard" ALTER COLUMN "definitions" SET DATA TYPE text;

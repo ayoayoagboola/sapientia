@@ -1,0 +1,1 @@
+ALTER TABLE "flashcardSet" ADD COLUMN "isPinned" boolean DEFAULT false;
