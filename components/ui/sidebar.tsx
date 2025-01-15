@@ -19,6 +19,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
@@ -600,7 +601,6 @@ const SidebarMenuLink = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button"> & {
     href?: string;
-
   }
 >(({ href = "/", ...props }, ref) => {
   const path = usePathname();
@@ -609,7 +609,7 @@ const SidebarMenuLink = React.forwardRef<
 
   return (
     <SidebarMenuButton asChild isActive={active}>
-      <a href={href}>{props.children}</a>
+      <Link href={href}>{props.children}</Link>
     </SidebarMenuButton>
   );
 });
