@@ -12,8 +12,9 @@ import {
   wordForms,
 } from "@/schema";
 import { auth } from "@/auth";
+import { revalidatePath } from "next/cache";
 
-// TODO: fix edit procedure: allow new cards when editing 
+// TODO: fix edit procedure: allow new cards when editing
 
 export const flashCardRouter = router({
   getFlashCardSets: protectedProcedure.query(async ({ ctx }) => {
@@ -77,6 +78,7 @@ export const flashCardRouter = router({
             userId: userId,
             title: input.set.title,
             description: input.set.description,
+            isCustom: true,
           })
           .returning({ setId: flashcardSets.id });
 
@@ -85,7 +87,7 @@ export const flashCardRouter = router({
             userId: userId,
             setId: flashCardSet.setId,
             term: card.term,
-            definitions: card.definitions.split(", "),
+            definitions: card.definitions,
             starred: false,
           });
         }
@@ -105,21 +107,40 @@ export const flashCardRouter = router({
     )
     .mutation(async ({ input }) => {
       try {
+        // Update the flashcard set
         await db
           .update(flashcardSets)
           .set({
             title: input.set.title,
             description: input.set.description,
-          }).where(eq(flashcardSets.id, input.set.id))
+          })
+          .where(eq(flashcardSets.id, input.set.id));
 
+        // Update existing cards
         for (const card of input.set.cards) {
-          await db.update(flashcards).set({
-            term: card.term,
-            definitions: card.definitions,
-          }).where(eq(flashcards.id, card.id));
+          if (card.id) {
+            // Existing card, update it
+            await db
+              .update(flashcards)
+              .set({
+                term: card.term,
+                definitions: card.definitions,
+              })
+              .where(eq(flashcards.id, card.id));
+          } else {
+            // New card, insert it
+            await db.insert(flashcards).values({
+              term: card.term,
+              definitions: card.definitions,
+              setId: input.set.id,
+              starred: false, // Assuming you have a foreign key linking cards to a set
+            });
+          }
         }
+
+        return { success: true };
       } catch (error) {
-        return { error: "Could not create flashcard set" };
+        return { error: "Could not update flashcard set" };
       }
     }),
 
@@ -137,7 +158,7 @@ export const flashCardRouter = router({
           .update(flashcards)
           .set({
             term: input.term,
-            definitions: input.definitions.split(", "),
+            definitions: input.definitions,
           })
           .where(eq(flashcards.id, input.id));
       } catch (error) {
@@ -155,6 +176,41 @@ export const flashCardRouter = router({
       } catch (error) {
         console.error("Error fetching sets:", error);
         return { error: "Failed to delete flashcards" }; // Return a consistent error structure
+      }
+    }),
+
+  togglePin: protectedProcedure
+    .input(z.object({ id: z.string() }))
+    .mutation(async ({ ctx, input }) => {
+      const { id } = input;
+
+      if (!ctx.user || !ctx.user.id) {
+        return { error: "You need to be logged in to pin the set!" };
+      }
+
+      try {
+        const set = await ctx.db.query.flashcardSets.findFirst({
+          where: eq(flashcardSets.id, id),
+        });
+
+        if (!set) return { error: "No set!" };
+
+        await ctx.db
+          .update(flashcardSets)
+          .set({
+            isPinned: !set.isPinned,
+          })
+          .where(eq(flashcardSets.id, set.id));
+
+        const currentPath = ctx.req.url;
+
+        if (currentPath) {
+          revalidatePath(currentPath);
+        }
+        return { success: "Flashcard set pinned!" };
+      } catch (error) {
+        console.log(error);
+        return { error: "Could not pin set!" };
       }
     }),
 });

@@ -4,9 +4,10 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import UserIcon from "@/components/user/UserIcon";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, ArrowRight, PencilLine } from "lucide-react";
+import { ArrowLeft, ArrowRight, PencilLine, Play } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import LearnDialog from "./LearnDialog";
 
 // TODO: edit some styles
 
@@ -85,8 +86,15 @@ const FlashCard = ({ set }: FlashCardProps) => {
       </div>
       <div className="flex w-full items-center justify-between my-4">
         <div className="flex flex-col gap-1 items-start justify-center text-sm font-medium">
-          Created by:
-          <UserIcon userId={set.userId} withName />
+          {/* Created by:
+          <UserIcon userId={set.userId} withName /> */}
+          <Link
+            href={`/practice/flashcards/${set.id}/learn`}
+            className={buttonVariants({ variant: "default" })}
+          >
+            <Play />
+            Learn
+          </Link>
         </div>
         <div className="flex items-center justify-center gap-4">
           <Button

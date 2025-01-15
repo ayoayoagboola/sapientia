@@ -12,7 +12,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
 
-// TODO: fix adding new terms to set 
+// TODO: fix adding new terms to set
 
 interface EditFlashCardsPageProps {
   params: Promise<{ flashcardId: string }>;
@@ -66,6 +66,7 @@ const EditFlashCardsPage = ({ params }: EditFlashCardsPageProps) => {
         ...card,
       })),
     };
+    console.log("new data: ", newData);
     await mutation.mutateAsync({ set: newData });
     console.log("results: ", newData);
   };

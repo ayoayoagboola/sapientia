@@ -10,7 +10,7 @@ import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-// TODO: add more create options 
+// TODO: add more create options (idek what lol)
 
 const CreateDropdown = () => {
   return (

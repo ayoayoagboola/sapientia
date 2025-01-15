@@ -5,11 +5,14 @@ import CreateFlashCardSet from "@/components/practice/flashcards/CreateFlashCard
 import { Button } from "@/components/ui/button";
 import { CreateFlashCardSetSchema } from "@/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Plus } from "lucide-react";
+import { LoaderCircle, Plus } from "lucide-react";
 import { redirect } from "next/navigation";
-import { FormProvider, useForm } from "react-hook-form";
+import { FormProvider, useFieldArray, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
+import ImportFlashcards from "@/components/practice/flashcards/ImportFlashcards";
+
+// fix styling 
 
 type CreateFlashCardSetValues = z.infer<typeof CreateFlashCardSetSchema>;
 
@@ -25,6 +28,13 @@ const CreateFlashCardsPage = () => {
     },
   });
 
+  const { control } = methods;
+
+  const { append } = useFieldArray({
+    control,
+    name: "cards",
+  });
+
   const onSubmit = async (data: z.infer<typeof CreateFlashCardSetSchema>) => {
     const newData = {
       ...data,
@@ -36,7 +46,6 @@ const CreateFlashCardsPage = () => {
     toast.success("asdfjadsfadfsdf");
     console.log("results: ", newData);
     redirect(`/practice/flashcards/${id}`);
-    
   };
 
   console.log(methods.getValues());
@@ -48,14 +57,17 @@ const CreateFlashCardsPage = () => {
           <div className="flex justify-start items-center">
             <h3 className="font-semibold">Create a new flashcard set</h3>
           </div>
-          <Button
-            disabled={mutation.isPending}
-            type="submit"
-            onClick={methods.handleSubmit(onSubmit)}
-          >
-            <Plus />
-            Create
-          </Button>
+          <div className="flex gap-2">
+            <ImportFlashcards append={append} />
+            <Button
+              disabled={mutation.isPending}
+              type="submit"
+              onClick={methods.handleSubmit(onSubmit)}
+            >
+              {mutation.isPending ? <LoaderCircle /> : <Plus />}
+              Create
+            </Button>
+          </div>
         </div>
         <CreateFlashCardSet />
       </div>

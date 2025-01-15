@@ -2,18 +2,12 @@
 
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { CreateFlashCardSetSchema } from "@/schemas";
-import React, { useState } from "react";
 import { useFieldArray, useFormContext } from "react-hook-form";
-import { z } from "zod";
 import CreateFlashCard from "./CreateFlashCard";
-import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/text-area";
 import { SquarePen } from "lucide-react";
 
-// TODO: add some tips + searching for words
-
-type CreateFlashCardSetValues = z.infer<typeof CreateFlashCardSetSchema>;
+// TODO: add word querying from db
 
 const CreateFlashCardSet = () => {
   const { register, control } = useFormContext();
@@ -38,7 +32,7 @@ const CreateFlashCardSet = () => {
         <div className="w-full h-full px-4 py-3">
           <Textarea
             placeholder="Write a description..."
-            className="w-full h-full !p-0 !border-none !text-base !font-normal focus:outline-none resize-none"
+            className="!w-full !h-full !p-2 !border-none !text-base !font-normal focus:outline-none focus:border-none focus:ring-none resize-none"
             {...register("description")}
           />
         </div>
@@ -52,9 +46,13 @@ const CreateFlashCardSet = () => {
             removeCard={() => remove(index)}
           />
         ))}
-        <div className="flex flex-col w-[750px] h-[150px] gap-0 items-center justify-center border border-dashed border-slate-400 hover:border-slate-900 rounded-[20px] transition-colors" onClick={() => append({ term: "", definitions: "" })}>
-            <SquarePen />
-            Add a card...
+
+        <div
+          className="flex flex-col w-[750px] h-[150px] gap-0 items-center justify-center border border-dashed border-slate-400 hover:border-slate-900 rounded-[20px] transition-colors"
+          onClick={() => append({ term: "", definitions: "" })}
+        >
+          <SquarePen />
+          Add a card...
         </div>
       </div>
     </div>

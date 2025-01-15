@@ -3,13 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { CreateFlashCardSchema } from "@/schemas";
-import { Grid3X3, GripVertical, Trash2 } from "lucide-react";
-import React, { useState } from "react";
+import { GripVertical, Trash2 } from "lucide-react";
+import React from "react";
 import { useFormContext } from "react-hook-form";
-import { z } from "zod";
+import { motion } from "motion/react";
 
-// TODO: fix some styling 
+// TODO: fix some styling + animations 
 
 interface CreateFlashCardProps {
   index: number;
@@ -26,46 +25,56 @@ const CreateFlashCard = ({ index, removeCard }: CreateFlashCardProps) => {
   };
 
   return (
-    <Card
-      variant="no_padding"
-      className="flex flex-col w-[750px] gap-0 justify-start border-slate-900 rounded-[20px]"
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.4,
+        scale: { type: "spring", visualDuration: 0.4, bounce: 0.2 },
+      }}
     >
-      <div className="flex w-full px-4 py-2 border-b border-b-slate-900 justify-between items-center">
-        <p className="font-semibold text-xl">{index + 1}</p>
-        <div className="flex">
-          <Button variant="ghost" className="p-2">
-            <GripVertical />
-          </Button>
-          <Button variant="ghost" className="p-2" onClick={removeCard}>
-            <Trash2 />
-          </Button>
+      <Card
+        variant="no_padding"
+        className="flex flex-col w-[750px] gap-0 justify-start border-slate-900 rounded-[20px]"
+      >
+        <div className="flex w-full px-4 py-2 border-b border-b-slate-900 justify-between items-center">
+          <p className="font-semibold text-xl">{index + 1}</p>
+          <div className="flex">
+            <Button variant="ghost" className="p-2">
+              <GripVertical />
+            </Button>
+            <Button variant="ghost" className="p-2" onClick={removeCard}>
+              <Trash2 />
+            </Button>
+          </div>
         </div>
-      </div>
-      <div className="flex w-full items-center justify-between px-8 pt-8 gap-8">
-        <Input
-          placeholder="Enter Latin"
-          className="!w-full !p-0 !border-0 !border-b !border-b-slate-900 !font-normal !text-base focus:outline-0 !rounded-none"
-          {...register(`cards.${index}.term`)}
-        />
-        <Input
-          placeholder="Enter English"
-          className="!w-full !p-0 !border-0 !border-b !border-b-slate-900 !font-normal !text-base focus:outline-0 !rounded-none"
-          {...register(`cards.${index}.definitions`)}
-        />
-      </div>
-      <div className="flex w-full h-14 gap-2 pl-28 items-center">
-        {["ā", "ē", "ī", "ō", "ū"].map((char) => (
-          <Button
-            key={char}
-            className="p-0 w-8 h-8 text-sm"
-            variant="ghost"
-            onClick={() => handleCharacterClick("term", char)} // For appending to the term
-          >
-            {char}
-          </Button>
-        ))}
-      </div>
-    </Card>
+        <div className="flex w-full items-center justify-between px-8 pt-8 gap-8">
+          <Input
+            placeholder="Enter Latin"
+            className="!w-full !p-0 !border-0 !border-b !border-b-slate-900 !font-normal !text-base focus:outline-0 !rounded-none"
+            {...register(`cards.${index}.term`)}
+          />
+          <Input
+            placeholder="Enter English"
+            className="!w-full !p-0 !border-0 !border-b !border-b-slate-900 !font-normal !text-base focus:outline-0 !rounded-none"
+            {...register(`cards.${index}.definitions`)}
+          />
+        </div>
+        <div className="flex w-full h-14 gap-2 pl-28 items-center">
+          {["ā", "ē", "ī", "ō", "ū"].map((char) => (
+            <Button
+              key={char}
+              className="p-0 w-8 h-8 text-sm"
+              variant="ghost"
+              onClick={() => handleCharacterClick("term", char)} // For appending to the term
+            >
+              {char}
+            </Button>
+          ))}
+        </div>
+      </Card>
+    </motion.div>
   );
 };
 
