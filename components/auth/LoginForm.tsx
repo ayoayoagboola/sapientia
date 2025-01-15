@@ -12,14 +12,17 @@ import { Input } from "../ui/input";
 import { useForm } from "react-hook-form";
 import { LoginSchema } from "@/schemas";
 import { Social } from "./Social";
-import { login } from "@/actions/login";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { trpc } from "@/app/_trpc/client";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
-// TODO: refactor error + success functionality
+// TODO: refactor error + success functionality, fix ui, + fix validation 
 
 export const LoginForm = () => {
   // const [showTwoFactor, setShowTwoFactor] = useState(false);
   const [isPending, startTransition] = useTransition();
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof LoginSchema>>({
     resolver: zodResolver(LoginSchema),
@@ -30,21 +33,27 @@ export const LoginForm = () => {
     },
   });
 
+  const logIn = trpc.users.logIn.useMutation({
+    onSuccess: () => {
+      toast.success("Registration successful!");
+      router.push("/home");
+    },
+    onError: (error) => {
+      toast.error(`Registration failed: ${error.message}`);
+    },
+  });
+
   const { register } = form;
 
   const onSubmit = (values: z.infer<typeof LoginSchema>) => {
     startTransition(() => {
-      login(values).then((data) => {
-        if (data?.error) {
-          form.reset();
-        }
-
-        if (data?.success) {
-          form.reset();
-        }
+      logIn.mutate({
+        email: values.email,
+        password: values.password,
       });
     });
   };
+
   return (
     <Card className="flex-col p-8 rounded-[24px]">
       <div className="mb-2">
@@ -88,7 +97,7 @@ export const LoginForm = () => {
         <Social />
       </div>
       <div className="flex gap-x-1 text-xs font-medium">
-        <p>Don`&apos;`t have an account?</p>
+        <p>Don&apos;t have an account?</p>
         <Link
           href="/signup"
           className="text-slate-500 underline-offset-4 hover:underline"

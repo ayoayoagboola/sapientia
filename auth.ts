@@ -9,6 +9,8 @@ import { getAccountByUserId } from "./data/user/account";
 import { twoFactorConfirmations, users } from "./schema";
 import { eq } from "drizzle-orm";
 
+// TODO: support for two-factor auth + email 
+
 export const {
   handlers: { GET, POST },
   auth,
@@ -35,20 +37,20 @@ export const {
       const existingUser = await getUserById(user.id);
 
       // prevent sign in w/out email verification
-      if (!existingUser?.emailVerified) return false;
+      // if (!existingUser?.emailVerified) return false;
 
-      if (existingUser.isTwoFactorEnabled) {
-        const twoFactorConfirmation = await getTwoFactorConfirmationByUserId(
-          existingUser.id
-        );
+      // if (existingUser.isTwoFactorEnabled) {
+      //   const twoFactorConfirmation = await getTwoFactorConfirmationByUserId(
+      //     existingUser.id
+      //   );
 
-        if (!twoFactorConfirmation) return false;
+      //   if (!twoFactorConfirmation) return false;
 
-        // delete two factor confirmation for next sign in
-        await db
-          .delete(twoFactorConfirmations)
-          .where(eq(twoFactorConfirmations.id, twoFactorConfirmation.id));
-      }
+      //   // delete two factor confirmation for next sign in
+      //   await db
+      //     .delete(twoFactorConfirmations)
+      //     .where(eq(twoFactorConfirmations.id, twoFactorConfirmation.id));
+      // }
 
       return true;
     },

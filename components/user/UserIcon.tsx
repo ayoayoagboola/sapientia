@@ -3,7 +3,7 @@ import { auth } from "@/auth";
 import Image from "next/image";
 import { UserIcon as Icon } from "lucide-react";
 
-// TODO: add actions 
+// TODO: add actions + link to user profile
 
 interface UserIconProps {
   userId?: string;
@@ -39,10 +39,6 @@ const UserIcon = ({ userId, withName }: UserIconProps) => {
   if (error) {
     console.error("Error:", error.message);
     return <div>Error: {error.message}</div>;
-  }
-
-  if ("error" in user) {
-    return <div>Error: {user.error}</div>;
   }
 
   return (

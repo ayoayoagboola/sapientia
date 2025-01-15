@@ -14,10 +14,11 @@ import { Label } from "../ui/label";
 import { Button } from "../ui/button";
 
 import { useTransition } from "react";
-import { signup } from "@/actions/signup";
 import { Social } from "./Social";
+import { trpc } from "@/app/_trpc/client";
+import { toast } from "sonner";
 
-// TODO: refactor error + success (toasts!)
+// TODO: refactor validation + fix ui
 
 export const SignupForm = () => {
   const [isPending, startTransition] = useTransition();
@@ -34,9 +35,23 @@ export const SignupForm = () => {
 
   const { register } = form;
 
+  const signUp = trpc.users.signUp.useMutation({
+    onSuccess: () => {
+      toast.success("Registration successful!");
+    },
+    onError: (error) => {
+      toast.error(`Registration failed: ${error.message}`);
+    },
+  });
+
   const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
     startTransition(() => {
-      signup(values);
+      signUp.mutate({
+        firstName: values.firstName,
+        lastName: values.lastName,
+        email: values.email,
+        password: values.password,
+      });
     });
   };
   return (

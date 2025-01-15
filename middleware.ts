@@ -1,6 +1,4 @@
 import NextAuth from "next-auth";
-// import { NextResponse } from "next/server";
-
 import authConfig from "@/auth.config";
 import {
   DEFAULT_LOGIN_REDIRECT,
@@ -8,6 +6,8 @@ import {
   authRoutes,
   publicRoutes,
 } from "@/routes";
+
+// middleware.ts
 
 const { auth } = NextAuth(authConfig);
 

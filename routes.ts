@@ -3,6 +3,9 @@
  * These routes do not require authentication
  * @type {string[]}
  */
+
+// added footerRoutes 
+
 export const publicRoutes = ["/", "/new-verification"];
 
 /**
@@ -17,6 +20,10 @@ export const authRoutes = [
   // "/reset-password",
   // "/new-password",
 ];
+
+export const footerRoutes = [ // routes where the footer should be hidden!
+  "/practice/flashcards/create"
+]
 
 /**
  * The prefix for API authentication routes

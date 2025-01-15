@@ -1,5 +1,7 @@
 import NextAuth, { type DefaultSession } from 'next-auth';
 
+// added supabaseAccessToken 
+
 export type ExtendedUser = DefaultSession["user"] & {
     isTwoFactorEnabled: boolean;
     isOAuth: boolean;
@@ -8,5 +10,6 @@ export type ExtendedUser = DefaultSession["user"] & {
 declare module 'next-auth' {
     interface Session {
         user: ExtendedUser;
+        supabaseAccessToken: string;
     }
 }

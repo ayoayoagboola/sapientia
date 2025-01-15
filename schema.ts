@@ -12,6 +12,8 @@ import {
 import { relations } from "drizzle-orm";
 import type { AdapterAccountType } from "next-auth/adapters";
 
+// TODO: add unique session handling 
+
 // user + account stuff
 
 export const users = pgTable("user", {
@@ -129,7 +131,7 @@ export const flashcards = pgTable("flashcard", {
     .notNull()
     .references(() => flashcardSets.id, { onDelete: "cascade" }),
   term: text("term").notNull(),
-  definitions: text("definitions").array().notNull(), // words can have multiple definitions. users can define which ones they wish to include in the set
+  definitions: text("definitions").notNull(), // words can have multiple definitions. users can define which ones they wish to include in the set
 });
 
 export const flashcardSets = pgTable("flashcardSet", {
@@ -137,6 +139,7 @@ export const flashcardSets = pgTable("flashcardSet", {
   dateAdded: timestamp("dateAdded").defaultNow().notNull(),
   userId: uuid("userId").references(() => users.id, { onDelete: "cascade" }), // Foreign key to the users table
   isCustom: boolean("isCustom").notNull(),
+  isPinned: boolean("isPinned").notNull().default(false),
   title: text("title").notNull(), // Title for the flashcard set
   description: text("description"), // Optional description
 });
