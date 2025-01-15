@@ -1,8 +1,8 @@
 // TODO: add search bar
 
 import { SidebarTrigger } from "../ui/sidebar";
-import UserIcon from "../user/CurrentUserAvatar";
-import CreateDropdown from "./CreateDropdown";
+import UserIcon from "../user/UserAvatar";
+import CreateDropdown from "../dropdowns/CreateDropdown";
 import Searchbar from "./Searchbar";
 
 const Navbar = () => {

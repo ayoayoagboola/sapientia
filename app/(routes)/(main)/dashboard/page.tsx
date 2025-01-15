@@ -1,7 +1,7 @@
 "use client";
 
 import { trpc } from "@/app/_trpc/client";
-import FlashCardButton from "@/components/practice/flashcards/FlashCardButton";
+import FlashCardButton from "@/components/dropdowns/FlashCardDropdown";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";

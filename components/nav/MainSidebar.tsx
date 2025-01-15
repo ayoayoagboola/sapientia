@@ -73,14 +73,14 @@ const MainSidebar = () => {
       <SidebarContent className="justify-between">
         <SidebarGroup className="gap-y-3">
           <SidebarMenuButton
-            className="group-data-[collapsible=icon]:!p-0 !p-0 h-13 hover:bg-transparent"
+            className="group-data-[collapsible=icon]:!p-0 !p-0 h-13 hover:bg-transparent transition-transform"
             asChild
             isActive={false}
           >
-            <a href={"/"}>
-              <div className={`w-full ${open ? "pr-20" : ""}`}>
+            <Link href={"/"}>
+              <div className={`w-full transition-transform ${open ? "pr-20" : ""}`}>
                 <Image
-                  className="w-full h-full"
+                  className="w-full h-full transition-transform"
                   src={open ? "/assets/logo.png" : "/assets/icon.png"}
                   width={open ? 256 : 32}
                   height={open ? 50 : 32}
@@ -88,7 +88,7 @@ const MainSidebar = () => {
                   alt="Logo"
                 />
               </div>
-            </a>
+            </Link>
           </SidebarMenuButton>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -112,10 +112,10 @@ const MainSidebar = () => {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuButton asChild>
-                <a href="/settings">
+                <Link href="/settings">
                   <Settings />
                   <span>Settings</span>
-                </a>
+                </Link>
               </SidebarMenuButton>
             </SidebarMenu>
           </SidebarGroupContent>

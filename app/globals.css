@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* organize this */
+
 html,
 body,
 :root {
@@ -104,4 +106,10 @@ h3 {
 
 .flashcard-back {
   transform: rotateX(180deg); /* Ensure the back side is flipped */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

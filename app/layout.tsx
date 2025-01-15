@@ -30,18 +30,19 @@ export default function RootLayout({
       <link rel="icon" href="/assets/favicon.ico" sizes="any" />
       <Providers>
         <body className={cn(sans.className, "bg-slate-50")}>
-          <main>
+          <main className="flex min-h-screen flex-col">
             <SidebarProvider>
-              <MainSidebar />
-              <div className="flex flex-col w-full">
-                <Navbar />
-                <div className="w-full">{children}</div>
+              <div className="flex flex-1">
+                <MainSidebar />
+                <div className="flex-1 flex flex-col">
+                  <Navbar />
+                  <div className="flex-1 min-h-screen">{children}</div>
+                  <Footer />
+                </div>
               </div>
-              {/* <LibrarySidebar /> */}
             </SidebarProvider>
           </main>
           <Toaster />
-          <Footer />
         </body>
       </Providers>
     </html>

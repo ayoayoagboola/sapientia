@@ -7,7 +7,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <Link href="/" className="cursor-pointer flex gap-4">
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 border-t border-slate-200 pt-8">
           <p className="text-base text-slate-400 xl:text-center">
-            © 2024 sapientia All rights reserved.
+            © 2025 sapientia All rights reserved.
           </p>
         </div>
       </div>
